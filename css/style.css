@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: rgba(44,62,80,255);
+}
+
+.primo-titolo{
+    font-size: 20px;
+}
+
+.contenitore-azzurro{
+    background-color: rgba(26,188,156,255);
+}
