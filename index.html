@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Bootstrap Freelancer</title>
     </head>
     <body>
@@ -36,21 +37,37 @@
               </div>
         </header>
         <!-- creazione jumbo -->
-        <div class="contenitore-azzurro text-center">
-            <div class="container text-light d-flex justify-content-center p-4">
+        <div class="contenitore-azzurro primo-azzurro text-center">
+            <div class="container text-light d-flex justify-content-center">
                 <div class="row flex-column">
-                    <div class="col">Immagine</div>
-                    <div class="col">START BOOTSTRAP</div>
-                    <div class="col">riga con stella</div>
-                    <div class="col"> Graphic artist- web designer- illustrator</div>
+                    <div class="col">
+                        <div class="contenitore-immagine-jumbo">
+                            <img src="./img/avatar.svg" alt="avatar-jumbo">
+                        </div>
+                    </div>
+                    <div class="col mb-2">
+                        <h1>START BOOTSTRAP</h1>
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center mb-3">
+                        <div class="riga-con-stella"></div>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="riga-con-stella"></div>
+                    </div>
+                    <div class="col mb-4"> <h3>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</h3></div>
                 </div>
             </div>
         </div>
         <!-- creazione contenitore con immagini -->
-        <div class="container text-center p-4">
+        <div class="container text-center color-blue">
             <div class="row flex-column">
-                <div class="col-12">PORTFOLIO</div>
-                <div class="col-12">riga con stella</div>
+                <div class="col-12 my-3 ">
+                    <h4>PORTFOLIO</h4>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center mb-3">
+                    <div class="riga-con-stella"></div>
+                    <i class="fa-solid fa-star "></i>
+                    <div class="riga-con-stella"></div>
+                </div>
             </div>
             <div class="row gy-3">
                 <div class="col-12 col-md-6 col-lg-4">
@@ -78,7 +95,7 @@
                         <img src="./img/safe.png" alt="cassaforte">
                     </div>
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
                     <div class="contenitore-immagine">
                         <img src="./img/submarine.png" alt="sottomarino">
                     </div>
@@ -87,25 +104,42 @@
         </div>
         <!-- creazione sezione about -->
         <div class="contenitore-azzurro">
-            <div class="container text-center p-4">
+            <div class="container text-center p-4 text-light">
                 <div class="row flex-column">
-                    <div class="col">ABOUT</div>
-                    <div class="col">riga con stella</div>
+                    <div class="col mb-2">
+                        <h3>ABOUT</h3>
+                    </div>
+                    <div class="col d-flex justify-content-center align-items-center mb-3">
+                        <div class="riga-con-stella"></div>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="riga-con-stella"></div>
+                    </div>
                     <div class="col">
                         <div class="row flex-row text-start">
-                            <div class="col-12 col-md-6 col-lg-6 py-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem aut quo nesciunt molestias ea eligendi soluta, incidunt, adipisci ipsam error, quaerat id commodi ratione dolorum numquam distinctio officia in! Facere.</div>
-                            <div class="col-12 col-md-6 col-lg-6 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione corporis deserunt quia fugit quod, sed, similique iste minima debitis facere laborum cum quos deleniti dolore vero. Eos dolores nostrum iusto!</div>
+                            <div class="col-12 col-md-6 col-lg-6 py-md-2 py-lg-2 px-5"><p>Freelancer is a free Bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p></div>
+                            <div class="col-12 col-md-6 col-lg-6 py-md-2 py-lg-2 px-5"><p>Wheter you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p></div>
                         </div>
                     </div>
-                    <div class="col">Download</div>
+                    <div class="col">
+                        <button type="button" class="btn btn-outline-light">
+                            <i class="fa-solid fa-download"></i>
+                             Download
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- creazione sezione contact -->
-        <div class="container p-4">
+        <div class="container p-4 color-blue">
             <div class="row flex-column text-center">
-                <div class="col">CONTACT ME</div>
-                <div class="col">riga con stella</div>
+                <div class="col">
+                    <h3>CONTACT ME</h3>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center mb-3">
+                    <div class="riga-con-stella"></div>
+                    <i class="fa-solid fa-star "></i>
+                    <div class="riga-con-stella"></div>
+                </div>
             </div>
             <div class="row flex-column">
                 <div class="col">
