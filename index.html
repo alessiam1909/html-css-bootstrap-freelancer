@@ -12,29 +12,35 @@
     <body>
         <!-- creazione header -->
         <header>
-            <div class="container text-light p-4">
-                <div class="row justify-content-between">
-                  <div class="col">
-                    <div class="primo-titolo">
-                        START BOOTSTRAP
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="row justify-content-end">
-                        <div class="col-md-3 col-lg-3 text-center">
-                            <div>PORTFOLIO</div>
-                        </div>
-                        <div class="col-md-3 col-lg-3 text-center">
-                            <div>ABOUT</div>
-                        </div>
-                        <div class="col-md-3 col-lg-3 text-center">
-                            <div>CONTACT</div>
-                        </div>
-                      </div>
-                    </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                  <a class="navbar-brand" href="#">START BOOTSTRAP</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse d-flex navbar-collapse justify-content-end " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-3 mb-2 mb-lg-0 ">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">PORTFOLIO</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="#">ABOUT</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            CONTACT
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#primo">Portfolio</a></li>
+                          <li><a class="dropdown-item" href="#secondo">Contacts</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#terzo">Copyright</a></li>
+                        </ul>
+                      </li>
+                    </ul>
                   </div>
                 </div>
-              </div>
+              </nav>
         </header>
         <!-- creazione jumbo -->
         <div class="contenitore-azzurro primo-azzurro text-center">
@@ -61,7 +67,7 @@
         <div class="container text-center color-blue">
             <div class="row flex-column">
                 <div class="col-12 my-3 ">
-                    <h4>PORTFOLIO</h4>
+                    <h4 id="primo">PORTFOLIO</h4>
                 </div>
                 <div class="col-12 d-flex justify-content-center align-items-center mb-3">
                     <div class="riga-con-stella"></div>
@@ -133,7 +139,7 @@
         <div class="container p-4 color-blue">
             <div class="row flex-column text-center">
                 <div class="col">
-                    <h3>CONTACT ME</h3>
+                    <h3 id="secondo">CONTACT ME</h3>
                 </div>
                 <div class="col-12 d-flex justify-content-center align-items-center mb-3">
                     <div class="riga-con-stella"></div>
@@ -145,22 +151,31 @@
                 <div class="col">
                     <div class="row flex-column">
                         <div class="col">
-                            Name <hr>
+                           <form action="#">
+                            <input type="name" id="input" name="nome" value="Name">
+                           </form>
                         </div>
                         <div class="col">
-                            Email Address <hr>
+                            <form action="#">
+                                <input type="email" id="input" name="email" value="Email Address">
+                            </form>
                         </div>
                         <div class="col">
-                            Phone Number <hr>
+                            <form action="#">
+                                <input type="text" id="input" name="phone-number" value="Phone Number">
+                            </form>
                         </div>
                         <div class="col">
-                            Message
+                            <form action="#">
+                                <textarea name="message" id="input" cols="30" rows="10">Message</textarea>
+                               </form>
                         </div>
                     </div>
                 </div>
                 <div class="col gy-5">
-                    <hr>
-                    Send
+                    <form action="#">
+                        <input id="send" class="btn btn-primary border-0" type="submit" value="Send">
+                    </form>
                 </div>
             </div>
         </div>
@@ -168,27 +183,40 @@
         <div class="contenitore-blu-chiaro">
             <div class="container p-4 text-light text-center">
                 <div class="row justify-content-between">
-                    <div class="col-12 col-md-4 col-lg-4">
+                    <div class="col-12 col-md-4 col-lg-4 mb-2">
                         LOCATION
-                        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta impedit reiciendis nemo maxime expedita laborum placeat vel, obcaecati voluptatem corporis, deleniti at harum recusandae! Nostrum incidunt ex culpa consectetur iste.</P>
+                        <P>2215 John Daniel Clark, MO 54243</P>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4">
-                        AROUND THE WEB 
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis cumque necessitatibus repellendus, quae vitae illo quo vel amet minus quisquam iusto corporis dolore libero, praesentium fuga asperiores, tempora perspiciatis iure!</p>
+                    <div class="col-12 col-md-4 col-lg-4 mb-2">
+                        <div>AROUND THE WEB</div>
+                        <span>
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </span>
+                        <span>
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </span>
+                        <span>
+                            <i class="fa-brands fa-twitter"></i>
+                        </span>
+                        <span>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </span>
                     </div>
-                    <div class="col-12 col-md-4 col-lg-4">
+                    <div class="col-12 col-md-4 col-lg-4 mb-3">
                         ABOUT FREELANCER 
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione fuga eaque odit ad inventore. Harum consectetur quod sint saepe, dolor quae laudantium, nam ex ipsum unde voluptas? Impedit, modi est.</p>
+                        <p>Freelance is a free to use, open source Bootastrap theme created by <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" class="link">Start Bootstrap</a>.</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="contenitore-blu-scuro">
+        <div class="contenitore-blu-scuro" id="terzo">
             <div class="container text-center text-light p-4">
                 <div class="row">
-                    <div class="col">Copyright C Your Website 2019</div>
+                    <div class="col">Copyright <i class="fa-regular fa-copyright"></i> Your Website 2019</div>
                 </div>
             </div>
         </div>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     </body>
 </html>
